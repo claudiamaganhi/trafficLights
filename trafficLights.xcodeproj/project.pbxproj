@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0FC682C923A926B700C5EE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682C823A926B700C5EE08 /* AppDelegate.swift */; };
 		0FC682CB23A926B700C5EE08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682CA23A926B700C5EE08 /* SceneDelegate.swift */; };
-		0FC682CD23A926B700C5EE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682CC23A926B700C5EE08 /* ViewController.swift */; };
+		0FC682CD23A926B700C5EE08 /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682CC23A926B700C5EE08 /* ManualViewController.swift */; };
 		0FC682D023A926B700C5EE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC682CE23A926B700C5EE08 /* Main.storyboard */; };
 		0FC682D223A926BB00C5EE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC682D123A926BB00C5EE08 /* Assets.xcassets */; };
 		0FC682D523A926BB00C5EE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC682D323A926BB00C5EE08 /* LaunchScreen.storyboard */; };
+		0FC682DD23AA6FD600C5EE08 /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682DC23AA6FD600C5EE08 /* APIViewController.swift */; };
+		0FC682DF23AA721400C5EE08 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682DE23AA721400C5EE08 /* TrafficLight.swift */; };
+		0FC682E523AA87DC00C5EE08 /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682E423AA87DC00C5EE08 /* TrafficLightService.swift */; };
+		0FC682EF23ABF6CC00C5EE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC682EE23ABF6CC00C5EE08 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FC682C523A926B700C5EE08 /* trafficLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trafficLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC682C823A926B700C5EE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FC682CA23A926B700C5EE08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0FC682CC23A926B700C5EE08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FC682CC23A926B700C5EE08 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		0FC682CF23A926B700C5EE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FC682D123A926BB00C5EE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FC682D423A926BB00C5EE08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FC682D623A926BB00C5EE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FC682DC23AA6FD600C5EE08 /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
+		0FC682DE23AA721400C5EE08 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		0FC682E423AA87DC00C5EE08 /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
+		0FC682EE23ABF6CC00C5EE08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		0FC682C723A926B700C5EE08 /* trafficLights */ = {
 			isa = PBXGroup;
 			children = (
-				0FC682C823A926B700C5EE08 /* AppDelegate.swift */,
-				0FC682CA23A926B700C5EE08 /* SceneDelegate.swift */,
-				0FC682CC23A926B700C5EE08 /* ViewController.swift */,
-				0FC682CE23A926B700C5EE08 /* Main.storyboard */,
+				0FC682E123AA877D00C5EE08 /* AppDelegate */,
+				0FC682E223AA879700C5EE08 /* Model */,
+				0FC682E323AA87C100C5EE08 /* Service */,
+				0FC682E023AA875B00C5EE08 /* View */,
 				0FC682D123A926BB00C5EE08 /* Assets.xcassets */,
-				0FC682D323A926BB00C5EE08 /* LaunchScreen.storyboard */,
 				0FC682D623A926BB00C5EE08 /* Info.plist */,
 			);
 			path = trafficLights;
+			sourceTree = "<group>";
+		};
+		0FC682E023AA875B00C5EE08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FC682EE23ABF6CC00C5EE08 /* ViewController.swift */,
+				0FC682CC23A926B700C5EE08 /* ManualViewController.swift */,
+				0FC682DC23AA6FD600C5EE08 /* APIViewController.swift */,
+				0FC682CE23A926B700C5EE08 /* Main.storyboard */,
+				0FC682D323A926BB00C5EE08 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC682E123AA877D00C5EE08 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0FC682C823A926B700C5EE08 /* AppDelegate.swift */,
+				0FC682CA23A926B700C5EE08 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0FC682E223AA879700C5EE08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FC682DE23AA721400C5EE08 /* TrafficLight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FC682E323AA87C100C5EE08 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0FC682E423AA87DC00C5EE08 /* TrafficLightService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC682CD23A926B700C5EE08 /* ViewController.swift in Sources */,
+				0FC682E523AA87DC00C5EE08 /* TrafficLightService.swift in Sources */,
+				0FC682CD23A926B700C5EE08 /* ManualViewController.swift in Sources */,
 				0FC682C923A926B700C5EE08 /* AppDelegate.swift in Sources */,
 				0FC682CB23A926B700C5EE08 /* SceneDelegate.swift in Sources */,
+				0FC682EF23ABF6CC00C5EE08 /* ViewController.swift in Sources */,
+				0FC682DD23AA6FD600C5EE08 /* APIViewController.swift in Sources */,
+				0FC682DF23AA721400C5EE08 /* TrafficLight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
