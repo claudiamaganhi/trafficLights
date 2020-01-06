@@ -1,2 +1,1 @@
-# semaphore
 # trafficLights
