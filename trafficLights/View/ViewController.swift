@@ -25,7 +25,4 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func apiTwo(_ sender: UIButton) {
-    }
-    
 }

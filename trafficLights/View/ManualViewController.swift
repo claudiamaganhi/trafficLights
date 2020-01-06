@@ -71,7 +71,6 @@ class ManualViewController: UIViewController {
     
     func setupNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain, target: self, action: #selector(start))
-       // navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Stop", style: .plain, target: self, action: #selector(stopLights))
     }
     
     func roundViews() {

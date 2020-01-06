@@ -25,14 +25,13 @@ class APIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // fetchTrafficLights()
+        fetchTrafficLights()
         roundViews()
         setupNavigationBar()
-        title = "API 1"
+        title = "API"
     }
     
     @objc func start() {
-        fetchTrafficLights()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stop", style: .plain, target: self, action: #selector(stopLights))
         guard let next = trafficLights.nextTimeCall else { return }
         guard let nextTimeCall = Double(next) else { return }

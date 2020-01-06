@@ -149,7 +149,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Qv-kQ-Lme">
-                                <rect key="frame" x="100" y="363" width="214" height="170"/>
+                                <rect key="frame" x="100" y="393" width="214" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nj9-8K-3kZ">
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="50"/>
@@ -168,20 +168,9 @@
                                             <constraint firstAttribute="height" constant="50" id="8gu-9E-z8s"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="API 1"/>
+                                        <state key="normal" title="API"/>
                                         <connections>
                                             <action selector="apiOne:" destination="wvD-gI-pj0" eventType="touchUpInside" id="iTp-hy-kF4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmT-Tj-NVo">
-                                        <rect key="frame" x="0.0" y="120" width="214" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Vml-li-H40"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="API 2"/>
-                                        <connections>
-                                            <action selector="apiTwo:" destination="wvD-gI-pj0" eventType="touchUpInside" id="FPy-0j-fWN"/>
                                         </connections>
                                     </button>
                                 </subviews>
