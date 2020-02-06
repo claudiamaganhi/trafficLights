@@ -74,7 +74,7 @@ class APIViewController: UIViewController {
     }
     
     @objc func stopLights() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain, target: self, action: #selector(start))
+        setupNavigationBar()
         timer.invalidate()
         for view in collectionView {
             view.backgroundColor = .lightGray
